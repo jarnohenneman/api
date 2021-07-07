@@ -15,7 +15,7 @@ words and outputs the result.
 ## List of word that need to be replaced:
 - Oracle -&gt; Oracle©
 - Google -&gt; Google©
-- Microsoft -&gt; Microsoft©
+- Microsoft -&gt; ~~Microsoft©~~ Amazon©
 - Amazon -&gt; Amazon©
 - Deloitte -&gt; Deloitte©
 
