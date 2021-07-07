@@ -1,0 +1,30 @@
+
+service: validate
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python3.8
+  lambdaHashingVersion: 20201221
+  region: eu-central-1
+
+# you can add packaging information here
+#package:
+#  patterns:
+#    - '!exclude-me.js'
+#    - '!exclude-me-dir/**'
+#    - include-me.js
+#    - include-me-dir/**
+
+functions:
+  validate:
+    handler: api/handler.validate_handler
+    description: Validate string handler, add Copyright to keywords.
+    memorySize: 128
+    events:
+      - http:
+          path: validate
+          method: post
+
+resources:
+  Description: 'Serverless example API - using AWS Lambda'
